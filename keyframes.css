@@ -1,40 +1,60 @@
 body {
-  background-color: darkgrey;
+    background-color: darkgray;
 }
 
-.box {
-  background-color: white;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  animation-name: my-first-animation;
-  animation-duration: 4s;
-  animation-iteration-count: 2;
-  animation-fill-mode: forwards;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
+.box{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: my-first-animation;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+
+    /* When it reaches one iteration, it goes reverse */
+    animation-direction: alternate;
+
+    /* Ease in-out is default */
+    /* Ease in = starts slow, ends fast */
+    /* Ease out = starts fast, ends slow */
+    animation-timing-function: ease-out;
+    /* animation-delay: 2s; */
 }
 
-@keyframes my-first-animation {
-  0% {
-    background-color: white;
-    border-radius: 0 0 0 0;
-  }
-  25% {
-    background-color: red;
-    border-radius: 50% 0 0 0;
-  }
-  50% {
-    background-color: green;
-    border-radius: 50% 50% 0 0;
-  }
-  75% {
-    background-color: blue;
+@keyframes my-first-animation{
+    0% {
+        background-color: white;
+        /* left: 0px;
+        top: 0px; */
+        border-radius: 0 0 0 0;
+    }
 
-    border-radius: 50% 50% 50% 0;
-  }
-  100% {
-    background-color: white;
-    border-radius: 50% 50% 50% 50%;
-  }
+    25% {
+        background-color: red;
+        /* left: 300px;
+        top: 0px; */
+        border-radius: 50% 0 0 0;
+    }
+
+    50% {
+        background-color: green;
+        /* left: 300px;
+        top: 300px; */
+        border-radius: 50% 50% 0 0;
+    }
+
+    75% {
+        background-color: blue;
+        /* left: 0px;
+        top: 300px; */
+        border-radius: 50% 50% 50% 0;
+    }
+
+    100% {
+        background-color: white;
+        /* left: 0px;
+        top: 0px; */
+        border-radius: 50% 50% 50% 50%;
+    }
 }

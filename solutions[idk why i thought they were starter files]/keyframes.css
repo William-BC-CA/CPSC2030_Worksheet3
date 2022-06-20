@@ -1,0 +1,40 @@
+body {
+  background-color: darkgrey;
+}
+
+.box {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: my-first-animation;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
+@keyframes my-first-animation {
+  0% {
+    background-color: white;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background-color: green;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background-color: blue;
+
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    background-color: white;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
