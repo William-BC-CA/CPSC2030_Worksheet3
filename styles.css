@@ -1,0 +1,21 @@
+body{
+    background-color: gray;
+}
+.wrapper{
+    margin: auto;
+}
+
+ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
