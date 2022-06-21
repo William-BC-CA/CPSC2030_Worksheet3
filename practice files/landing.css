@@ -67,6 +67,8 @@ header h1{
     animation-name: animate-btn;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
 }
 
 @keyframes animate-btn{
@@ -76,4 +78,9 @@ header h1{
     100%{
         opacity: 1;
     }
+}
+
+.btn:hover{
+    /* transform: scale(1.2); */
+    transform: rotateX(180deg);
 }
